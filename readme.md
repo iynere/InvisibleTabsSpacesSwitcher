@@ -29,7 +29,7 @@ To uninstall, remove the plugin folder from your Packages folder, or else use `P
 
 ## Credits
 
-Many thanks to [bubenkoff](https://github.com/bubenkoff)'s [ExpandTabsOnSave-SublimeText](https://packagecontrol.io/packages/Expand Tabs on Save) plugin for inspiration.
+Many thanks to [bubenkoff](https://github.com/bubenkoff)'s [Expand Tabs On Save](https://packagecontrol.io/packages/Expand Tabs on Save) plugin for inspiration.
 
 ## License
 
