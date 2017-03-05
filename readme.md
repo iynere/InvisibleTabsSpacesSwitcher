@@ -23,7 +23,7 @@ Enable the plugin by adding the following lines to your Sublime Text user settin
 "view_files_with_tabs": true
 ```
 
-`"save_files_with_spaces"` and `"view_files_with_tabs"` configure how you'd like tab/space conversion to happen; default is working with tabs and saving with spaces. By toggling these options to `false`, you can work with spaces and save with spaces, work with spaces and save with tabs, or work with tabs and save with tabs.
+`"save_files_with_spaces"` and `"view_files_with_tabs"` configure how you'd like tab/space conversion to happen; default is working with tabs and saving with spaces. By toggling either or both of these options to `false`, you can work with spaces and save with spaces, work with spaces and save with tabs, or work with tabs and save with tabs.
 
 To uninstall, remove the plugin folder from your Packages folder, or else use `Package Control: Remove Package`.
 
