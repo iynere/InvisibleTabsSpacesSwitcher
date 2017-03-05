@@ -1,6 +1,6 @@
-"""Invisible Tabs Spaces Switcher SublimeText plugin"""
+"""Invisible Tabs Spaces Switcher Sublime Text plugin"""
 
-import sublime, sublime_plugin # modules provided by SublimeText
+import sublime, sublime_plugin # modules provided by Sublime Text
 
 class InvisibleTabsSpacesSwitcher(sublime_plugin.EventListener):
   def on_load(self, view): # event triggered when file is loaded
