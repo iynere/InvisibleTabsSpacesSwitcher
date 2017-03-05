@@ -27,8 +27,12 @@ Enable the plugin by adding the following lines to your Sublime Text user settin
 
 To uninstall, remove the plugin folder from your Packages folder, or else use `Package Control: Remove Package`.
 
+## Credits
+
+Many thanks to [bubenkoff](https://github.com/bubenkoff)'s [ExpandTabsOnSave-SublimeText](https://packagecontrol.io/packages/Expand Tabs on Save) plugin for inspiration.
+
 ## License
 
-This software is licensed under the [MIT License]: http://en.wikipedia.org/wiki/MIT_License.
+This software is licensed under the [MIT License](http://en.wikipedia.org/wiki/MIT_License).
 
 © 2017 r0se kaplan-bomberg
