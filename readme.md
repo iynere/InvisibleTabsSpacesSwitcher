@@ -3,7 +3,7 @@
 
 This plugin will convert spaces to tabs in a file as soon as you open it, then convert them back to spaces before you close it (or vice versa!).
 
-Why did I make this? I hate working with spaces. Files with tabs look really clunky on GitHub. Coders working on team projects often have different personal preferences. This lets you work the way you want to, without causing formatting issues online or making it harder to compare files when reviewing pull requests.
+Why did I make this? I hate working with spaces. The internet hates code files with tabs. Coders working on team projects often have different personal preferences. This lets you work the way you want to, without causing formatting issues online or making it harder to compare files when reviewing pull requests.
 
 ## Installation
 
