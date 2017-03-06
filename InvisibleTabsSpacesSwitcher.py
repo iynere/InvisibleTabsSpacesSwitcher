@@ -9,7 +9,7 @@ def plugin_loaded():
       load_file(view)
 
 # loading & closing methods for the plugin to use
-def load_file(view):
+def format_on_load(view):
   if view.file_name(): # ignore untitled default/background files
     if not view.file_name().endswith('.sublime-settings') and not view.file_name().endswith('.sublime-keymap'): # ignore preferences and key-bindings files
       if view.settings().get('view_files_with_tabs') == True:
@@ -18,7 +18,7 @@ def load_file(view):
         view.run_command('expand_tabs') # convert to spaces
       view.run_command('save')
   
-def close_file(view):
+def format_on_close(view):
   if view.file_name():
     if not view.file_name().endswith('.sublime-settings') and not view.file_name().endswith('.sublime-keymap'):
       if view.settings().get('view_files_with_tabs') == True:
@@ -28,13 +28,11 @@ def close_file(view):
       view.run_command('save')
 
 # the plugin itself
-class InvisibleTabsSpacesSwitcherCommand(sublime_plugin.EventListener):
-  def on_load(self, view): # event triggered when file is loaded
+class InvisibleTabsSpacesSwitcher(sublime_plugin.EventListener):
+  def on_load(self, view): # event triggered when file is activated
     if view.settings().get('invisible_tabs_spaces_switching') == True:
-      load_file(view)
+      format_on_load(view)
 
   def on_pre_close(self, view): # event triggered before file closes
     if view.settings().get('invisible_tabs_spaces_switching') == True:
-      close_file(view)
-
-
+      format_on_close(view)
