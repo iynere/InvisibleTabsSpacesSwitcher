@@ -6,10 +6,10 @@ import sublime, sublime_plugin # modules provided by Sublime Text
 def plugin_loaded():
   if sublime.load_settings('Preferences.sublime-settings').get('invisible_tabs_spaces_switching') == True:
     for view in sublime.active_window().views(): # loop through opened files
-      load_file(view)
+      format_for_load(view)
 
 # loading & closing methods for the plugin to use
-def format_on_load(view):
+def format_for_load(view):
   if view.file_name(): # ignore untitled default/background files
     if not view.file_name().endswith('.sublime-settings') and not view.file_name().endswith('.sublime-keymap'): # ignore preferences and key-bindings files
       if view.settings().get('view_files_with_tabs') == True:
@@ -18,7 +18,7 @@ def format_on_load(view):
         view.run_command('expand_tabs') # convert to spaces
       view.run_command('save')
   
-def format_on_close(view):
+def format_for_close(view):
   if view.file_name():
     if not view.file_name().endswith('.sublime-settings') and not view.file_name().endswith('.sublime-keymap'):
       if view.settings().get('view_files_with_tabs') == True:
@@ -31,8 +31,8 @@ def format_on_close(view):
 class InvisibleTabsSpacesSwitcher(sublime_plugin.EventListener):
   def on_load(self, view): # event triggered when file is activated
     if view.settings().get('invisible_tabs_spaces_switching') == True:
-      format_on_load(view)
+      format_for_load(view)
 
   def on_pre_close(self, view): # event triggered before file closes
     if view.settings().get('invisible_tabs_spaces_switching') == True:
-      format_on_close(view)
+      format_for_close(view)
