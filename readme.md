@@ -9,9 +9,9 @@ Why did I make this? I hate working with spaces. The internet hates code files w
 
 Until it's in Package Control, you have to install it manually.
 
-Download the project, expand the .zip, and put the folder in Sublime Text's Packages folder. On a Mac and with Sublime Text 3, this folder is in **~/Library/Application Support/Sublime Text 3**.
+Clone the project into Sublime Text's Packages folder (or download it as a .zip, decompress it, and move it there yourself). On a Mac and with Sublime Text 3, this folder is in **~/Library/Application Support/Sublime Text 3**.
 
-Invisible Tabs Spaces Switcher won't do anything until you configure it.
+Invisible Tabs Spaces Switcher won't do anything unless you configure it.
 
 ## Configuration
 
