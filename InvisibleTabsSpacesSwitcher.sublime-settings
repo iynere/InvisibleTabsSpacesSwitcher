@@ -1,0 +1,10 @@
+{
+	// if false, will disable the plugin
+	"invisible_tabs_spaces_switcher": true,
+	
+	// if false, files will be saved with tabs
+	"save_files_with_spaces": true,
+	
+	// if false, files will be loaded with spaces
+	"view_files_with_tabs": true
+}
