@@ -26,9 +26,11 @@ The plugin is enabled with the following default settings.
 "view_files_with_tabs": true
 ```
 
-Add your own settings to Settings – User (in **Preferences -> Package Settings -> InvisibleTabsSpacesSwitcher**)
+Add your own settings to **Settings – User** (in **Preferences -> Package Settings -> InvisibleTabsSpacesSwitcher**)
 
 To uninstall, remove the plugin folder from your Packages folder, or else use `Package Control: Remove Package`.
+
+***Note:*** *if you have SideBarEnhancements installed, you need to set* ```"close_affected_buffers_when_deleting_even_if_dirty"``` *to* ```true``` *in your ***Side Bar.sublime-settings*** file otherwise you won't be able to delete files from the sidebar*
 
 ## Credits
 
