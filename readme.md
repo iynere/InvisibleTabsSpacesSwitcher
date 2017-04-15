@@ -32,7 +32,7 @@ To uninstall, remove the plugin folder from your Packages folder, or else use `P
 
 ## Credits
 
-Thanks to [bubenkoff](https://github.com/bubenkoff)'s [Expand Tabs On Save](https://packagecontrol.io/packages/Expand Tabs on Save) plugin for inspiration.
+Thanks to [bubenkoff](https://github.com/bubenkoff)'s [Expand Tabs On Save](https://packagecontrol.io/packages/Expand%20Tabs%20on%20Save) plugin for inspiration.
 
 ## License
 
